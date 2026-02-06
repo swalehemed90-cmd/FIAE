@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIAE | Firdaous Initiative for Academic Excellence</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #050508;
+      color: #FFFFFF;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::selection {
+      background: rgba(212, 175, 55, 0.3);
+      color: #FFFFFF;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Times New Roman', 'Times', 'serif'],
+            sans: ['Times New Roman', 'Times', 'serif'],
+          },
+          colors: {
+            fiae: {
+              bg: '#050508',
+              surface: '#0a0a12',
+              elevated: '#10101a',
+              gold: '#D4AF37',
+              goldGlow: 'rgba(212,175,55,0.3)',
+              goldSubtle: 'rgba(212,175,55,0.15)',
+              blue: '#3B82F6',
+              blueGlow: 'rgba(59,130,246,0.3)',
+              cardBg: 'rgba(255,255,255,0.03)',
+              cardBorder: 'rgba(212,175,55,0.15)',
+              textSecondary: 'rgba(255,255,255,0.6)',
+              textTertiary: 'rgba(255,255,255,0.4)',
+            }
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'glow': 'glow 4s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            glow: {
+              '0%, 100%': { opacity: '0.3' },
+              '50%': { opacity: '0.6' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.33.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
