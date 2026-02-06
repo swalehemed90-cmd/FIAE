@@ -20,31 +20,32 @@ const allPrograms: Program[] = [
   },
   {
     id: '3',
-    tag: 'ACADEMIC DEVELOPMENT',
-    title: 'Scholarships & Academic Support',
-    description: 'Supporting access to education through scholarships and mentorship.',
-    meta: 'Merit-based • Inclusive'
+    tag: 'SCHOLARSHIP',
+    title: 'Late J.S Ajiboye Scholarship',
+    description: 'African Youth Empowerment Scholarship aiming to unlock the vast potential of young minds across the continent through education.',
+    meta: 'Merit-based • Primary & Secondary'
   },
   {
     id: '4',
     tag: 'RESEARCH & ADVOCACY',
     title: 'Policy Research & Publications',
     description: 'Evidence-based research on law, governance, elections, climate, and human rights in Africa.',
-    meta: 'Reports • Articles • Briefs'
+    meta: 'Reports • Articles • Briefs',
+    link: '/publications'
   },
   {
     id: '5',
-    tag: 'LEADERSHIP',
-    title: 'Executive Training for Future Diplomats',
-    description: 'Advanced workshops on international relations, diplomatic protocol, and multilateral negotiation.',
-    meta: 'Professional • Biennial'
+    tag: 'LEADERSHIP & DIALOGUE',
+    title: 'FIAE One on One',
+    description: 'Monthly scholarly interview sessions addressing continental challenges and sustainable solutions across Africa.',
+    meta: 'Monthly • Scholarly Interview'
   },
   {
     id: '6',
-    tag: 'HUMANITARIAN',
-    title: 'Refugee Rights & Protection Workshop',
-    description: 'Legal training focused on the rights of displaced persons under African and international law.',
-    meta: 'Specialized • Regional'
+    tag: 'CONTEMPORARY ISSUES',
+    title: 'Webinar Series',
+    description: 'High-impact digital forums discussing contemporary issues and emerging trends affecting the African continent.',
+    meta: 'Regular • Virtual Forums'
   }
 ];
 

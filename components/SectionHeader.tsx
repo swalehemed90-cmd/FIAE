@@ -20,7 +20,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ title, subtitle, centered
         <h2 className="text-[2.5rem] font-semibold leading-tight mb-4">
           {title}
         </h2>
-        <div className={`h-1 w-24 bg-fiae-gold rounded-full mb-6 ${centered ? 'mx-auto' : ''}`} />
+        <div className={`h-1 w-24 bg-fiae-primary rounded-full mb-6 ${centered ? 'mx-auto' : ''}`} />
         {subtitle && (
           <p className="text-fiae-textSecondary max-w-2xl mx-auto leading-relaxed">
             {subtitle}

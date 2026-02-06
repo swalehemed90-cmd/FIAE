@@ -44,7 +44,8 @@ const programs: Program[] = [
     tag: 'RESEARCH & ADVOCACY',
     title: 'Policy Research & Publications',
     description: 'Evidence-based research on law, governance, elections, climate, and human rights in Africa.',
-    meta: 'Reports • Articles • Briefs'
+    meta: 'Reports • Articles • Briefs',
+    link: '/publications'
   }
 ];
 
@@ -66,38 +67,38 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="z-10"
           >
-            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-fiae-gold/10 border border-fiae-gold/20 mb-8">
-              <span className="text-[10px] font-bold text-fiae-gold uppercase tracking-[0.2em]">
+            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-fiae-primary/10 border border-fiae-primary/20 mb-8">
+              <span className="text-[10px] font-bold text-fiae-primary uppercase tracking-[0.2em]">
                 ACADEMIC EXCELLENCE • PEACE • JUSTICE
               </span>
             </div>
             
             <h1 className="text-[2.5rem] md:text-[4.5rem] font-bold leading-[1.1] tracking-[-0.02em] mb-8">
-              Advancing <span className="text-fiae-gold">Academic Excellence</span> for a Just and Peaceful Africa
+              Advancing <span className="text-fiae-primary">Academic Excellence</span> for a Just and Peaceful Africa
             </h1>
             
             <p className="text-lg text-fiae-textSecondary max-w-[540px] mb-10 leading-relaxed">
               Firdaous Initiative for Academic Excellence is dedicated to empowering African students, scholars, and institutions through education, law, leadership, and humanitarian engagement.
             </p>
             
-            <div className="flex flex-wrap items-center gap-4 mb-12 text-sm text-fiae-gold font-medium">
+            <div className="flex flex-wrap items-center gap-4 mb-12 text-sm text-fiae-primary font-medium">
               <span>10+ Countries Represented</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-fiae-gold/50" />
+              <span className="w-1.5 h-1.5 rounded-full bg-fiae-primary/50" />
               <span>Continental Programs</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-fiae-gold/50" />
+              <span className="w-1.5 h-1.5 rounded-full bg-fiae-primary/50" />
               <span>International Partnerships</span>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/programs"
-                className="px-8 py-4 bg-fiae-gold text-[#050508] rounded-xl font-bold text-center hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] hover:scale-[1.02] transition-all duration-300"
+                className="px-8 py-4 bg-fiae-primary text-[#050508] rounded-xl font-bold text-center hover:shadow-[0_0_30px_rgba(27,174,112,0.4)] hover:scale-[1.02] transition-all duration-300"
               >
                 Explore Our Programs
               </Link>
               <Link
                 to="/publications"
-                className="px-8 py-4 bg-transparent border-2 border-fiae-gold text-fiae-gold rounded-xl font-bold text-center hover:bg-fiae-gold/5 hover:shadow-[0_0_20px_rgba(212,175,55,0.1)] transition-all duration-300"
+                className="px-8 py-4 bg-transparent border-2 border-fiae-primary text-fiae-primary rounded-xl font-bold text-center hover:bg-fiae-primary/5 hover:shadow-[0_0_20px_rgba(27,174,112,0.1)] transition-all duration-300"
               >
                 Read Our Publications
               </Link>
@@ -119,7 +120,7 @@ const Home: React.FC = () => {
                   scale: { delay: item.delay, duration: 0.6 },
                   y: { repeat: Infinity, duration: 4 + Math.random() * 2, ease: "easeInOut" }
                 }}
-                className="absolute p-4 md:p-6 bg-fiae-surface/60 backdrop-blur-xl border border-fiae-gold/20 rounded-xl shadow-2xl"
+                className="absolute p-4 md:p-6 bg-fiae-surface/60 backdrop-blur-xl border border-fiae-primary/20 rounded-xl shadow-2xl"
                 style={{ 
                   top: item.top, 
                   left: item.left,
@@ -130,16 +131,16 @@ const Home: React.FC = () => {
               >
                 <div className="flex flex-col gap-2 min-w-[120px]">
                    <div className="w-full h-24 md:h-28 bg-white/5 rounded-lg border border-white/10 flex items-center justify-center relative overflow-hidden group">
-                     <div className="absolute inset-0 bg-gradient-to-br from-fiae-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                     <div className="w-8 h-8 rounded-full border-2 border-fiae-gold/30 animate-pulse relative z-10" />
+                     <div className="absolute inset-0 bg-gradient-to-br from-fiae-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                     <div className="w-8 h-8 rounded-full border-2 border-fiae-primary/30 animate-pulse relative z-10" />
                    </div>
-                   <span className="text-[9px] font-bold text-fiae-gold tracking-widest uppercase mt-2 opacity-80">
+                   <span className="text-[9px] font-bold text-fiae-primary tracking-widest uppercase mt-2 opacity-80">
                      {item.label}
                    </span>
                 </div>
               </motion.div>
             ))}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-fiae-gold/10 blur-[120px] rounded-full -z-10 animate-glow" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-fiae-primary/10 blur-[120px] rounded-full -z-10 animate-glow" />
           </div>
         </div>
       </section>
@@ -165,18 +166,18 @@ const Home: React.FC = () => {
             {impactStats.map((impact, idx) => (
               <motion.div
                 key={idx}
-                whileHover={{ y: -5, borderColor: 'rgba(212,175,55,0.4)' }}
+                whileHover={{ y: -5, borderColor: 'rgba(27,174,112,0.4)' }}
                 className="min-w-[300px] md:min-w-[400px] p-10 bg-fiae-cardBg border border-fiae-cardBorder rounded-3xl snap-center transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-fiae-gold/10 rounded-full flex items-center justify-center mb-6">
-                  <span className="text-fiae-gold font-bold">0{idx + 1}</span>
+                <div className="w-12 h-12 bg-fiae-primary/10 rounded-full flex items-center justify-center mb-6">
+                  <span className="text-fiae-primary font-bold">0{idx + 1}</span>
                 </div>
                 <p className="text-xl font-medium leading-relaxed italic text-white/90">
                   "{impact.text}"
                 </p>
                 <div className="mt-8 flex items-center gap-4">
-                  <div className="w-8 h-[1px] bg-fiae-gold" />
-                  <span className="text-xs uppercase tracking-widest text-fiae-gold font-bold">Institutional Impact</span>
+                  <div className="w-8 h-[1px] bg-fiae-primary" />
+                  <span className="text-xs uppercase tracking-widest text-fiae-primary font-bold">Institutional Impact</span>
                 </div>
               </motion.div>
             ))}
@@ -188,7 +189,7 @@ const Home: React.FC = () => {
       <section className="py-[160px] px-6 relative overflow-hidden bg-[#050508]">
         <div 
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[900px] h-[900px] opacity-10 blur-[120px] -z-10" 
-          style={{ backgroundImage: 'radial-gradient(circle, #D4AF37 0%, transparent 70%)' }} 
+          style={{ backgroundImage: 'radial-gradient(circle, #1BAE70 0%, transparent 70%)' }} 
         />
         
         <div className="max-w-[800px] mx-auto text-center relative z-10">
@@ -205,15 +206,15 @@ const Home: React.FC = () => {
             
             <Link
               to="/contact"
-              className="inline-block px-12 py-5 bg-fiae-gold text-[#050508] rounded-xl font-bold text-xl hover:shadow-[0_0_50px_rgba(212,175,55,0.5)] hover:scale-[1.05] transition-all duration-300"
+              className="inline-block px-12 py-5 bg-fiae-primary text-[#050508] rounded-xl font-bold text-xl hover:shadow-[0_0_50px_rgba(27,174,112,0.5)] hover:scale-[1.05] transition-all duration-300"
             >
               Get Involved with FIAE
             </Link>
             
             <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-fiae-textTertiary text-[10px] font-bold uppercase tracking-[0.25em]">
-              <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-fiae-gold" /> Transparent</span>
-              <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-fiae-gold" /> Nonprofit</span>
-              <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-fiae-gold" /> Impact-driven</span>
+              <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-fiae-primary" /> Transparent</span>
+              <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-fiae-primary" /> Nonprofit</span>
+              <span className="flex items-center gap-2"><div className="w-1 h-1 rounded-full bg-fiae-primary" /> Impact-driven</span>
             </div>
           </motion.div>
         </div>
